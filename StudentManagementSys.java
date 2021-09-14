@@ -60,7 +60,7 @@ public class StudentManagementSys extends Application {
                 confirmationMsg = new Alert(AlertType.CONFIRMATION, "Do you want to quit the application?");
 
                 if (confirmationMsg.showAndWait().get() == ButtonType.OK) {
-                    System.exit(0);
+                    primaryStage.close();
                 }
             }
         });
